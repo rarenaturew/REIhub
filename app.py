@@ -24,25 +24,7 @@ def index():
   if request.method == 'GET':
     return render_template('index.html',start_date=StartDate)
   else:
-    #request.form is an ImmutableMultiDict
-    StockName = request.form['stock_name'].upper()
-    ShowFeatures=[] # which features to show
-    # or if request.form.get('close_price',False): ShowFeatures.append('Close')
-    if 'close_price' in request.form: ShowFeatures.append('Close')
-    if 'adj_close_price' in request.form: ShowFeatures.append('Adj. Close')
-    SD=request.form['start_date']
-    if len(SD) == 10 : StartDate=str(SD)
-    ED=request.form['end_date']
-    if len(ED) == 10 : EndDate=str(ED)
-    URL='https://www.quandl.com/api/v3/datasets/WIKI/'+StockName+'.json?auth_token=XMD-ta2mEyx3bj_AGW3n&start_date='+StartDate+'&end_date='+EndDate
-    r = requests.get(URL).json()
-    if 'dataset' in r:
-      dataDF = pd.DataFrame(data=r['dataset']['data'],\
-                         columns=r['dataset']['column_names'])
-      plotDF(dataDF,StockName,ShowFeatures)
-      return render_template('bokeh_embed.html') 
-    else:
-      return render_template('error.html', end_message=r['quandl_error']['message'] ) 
+    return render_template('result.html') 
 
 
 if __name__ == '__main__':
