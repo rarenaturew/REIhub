@@ -327,6 +327,7 @@ The city's investment situation based on your priorities:
 		<script src='{{ url_for('static',filename='js/wow.min.js')}}'></script>
 		<script src='{{ url_for('static',filename='js/jquery.flexslider.js')}}'></script>
 		<script src='{{ url_for('static',filename='js/templatemo-script.js')}}'></script>
+                <script>  window.location.hash={% if jump_flag==1 %}"#service"{%else%}"#home"{%endif%}; </script>
 		<!-- end javascript -->
 	</body>	
 </html>

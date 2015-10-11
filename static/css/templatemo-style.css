@@ -68,6 +68,11 @@ body
 }
 /* end page container */
 
+/* the selector that I made */
+select.my_selector {
+    text-align:left;
+}
+
 /* start navigation */
 .navbar-default
   {

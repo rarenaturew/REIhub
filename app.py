@@ -33,7 +33,7 @@ def index():
   StartDate=getStartDate(Today) # one month before today, a string: %Y-%m-%d
   result_src_http = srcAP_LC
   if request.method == 'GET':
-    return render_template('index.html',start_date=StartDate, src_http = result_src_http)
+    return render_template('index.html',src_http = result_src_http, jump_flag = 0)
   else:
     form_result = request.form
     if form_result['prefer_return']=='cash' and form_result['crime_level']=='high':
@@ -54,7 +54,7 @@ def index():
       result_src_http = srcAP_MC
     if form_result['prefer_return']=='appr' and form_result['crime_level']=='low':
       result_src_http = srcAP_LC
-    return render_template('result.html', src_http = result_src_http ) 
+    return render_template('index.html', src_http = result_src_http, jump_flag = 1 ) 
 
 
 
