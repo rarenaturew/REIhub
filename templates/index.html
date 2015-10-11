@@ -127,33 +127,41 @@ estate investors in general.
 					</div>
 					<div class="col-md-2"></div>
 					<div class="col-md-12">
-						<h3>EVALUATE PROPERTIES</h3>
- <h4 align="left">Please enter the parameters of your target property:</h4>
+						<h3>EVALUATE YOUR TARGET PROPERTY</h3>
 <form id='index' method='post' action='index' > <!-- action is the URL you want to move to next-->
 <div class="col-md-6">
-   Street Address: <input type='text' name='start_date' />  &nbsp;&nbsp;<br>
-   City: <input type='text' name='start_date' />  &nbsp;&nbsp;<br>
-   State: <input type='text' name='start_date' />  &nbsp;&nbsp;<br>
-   Zip Code: <input type='text' name='start_date' />  &nbsp;&nbsp;<br> <br>
+ <h4 align="right">The detailed address of your target property:</h4>
+   <h5 align="right">Street Address: <input type='text' name='p_address' />  &nbsp;&nbsp;<br></h5>
+   <h5 align="right">City: <input type='text' name='p_city' />  &nbsp;&nbsp;<br></h5>
+   <h5 align="right">State: <input type='text' name='p_state' />  &nbsp;&nbsp;<br></h5>
+   <h5 align="right">Zip Code: <input type='text' name='p_zip' />  &nbsp;&nbsp;<br> <br></h5>
 </div>
 <div class="col-md-6">
-   Purchase Price: <input type='text' name='start_date' />  &nbsp;&nbsp;<br>
-   Closing Cost: <input type='text' name='start_date' />  &nbsp;&nbsp;<br>
-   Repair Cost: <input type='text' name='start_date' />  &nbsp;&nbsp;<br>
-   Property Management fee (%): <input type='text' name='end_date' />  &nbsp;&nbsp;<br><br>
+ <h4 align="right">Basic financial data of your target property:</h4>
+   <h5 align="right">Purchase Price: <input type='text' name='p_pprice' />  &nbsp;&nbsp;<br></h5>
+   <h5 align="right">Closing Cost: <input type='text' name='p_ccost' />  &nbsp;&nbsp;<br></h5>
+  <h5 align="right"> Repair Cost: <input type='text' name='p_rcost' />  &nbsp;&nbsp;<br></h5>
+   <h5 align="right">Property Management fee (%): <input type='text' name='p_mfee' />  &nbsp;&nbsp;<br><br></h5>
 </div>
 <div class="col-md-6">
-<h4>Your priorities:</h4>
-   Forced Appreciation (%): <input type='text' name='start_date' />  &nbsp;&nbsp;<br>
-   Natural Appreciation (%): <input type='text' name='start_date' />  &nbsp;&nbsp;<br>
-   Cash Flow (%): <input type='text' name='start_date' />  &nbsp;&nbsp;<br><br>
+<h4 align="right">Prefer rental income or appreciation:<br>
+   <select name='prefer_return' class="my_selector">
+  <option  value="cash">rental income</option>
+  <option  value="cash_appr">appreciation</option>
+  <option  value="appr">balance the two</option>
+  </select></h4>
 </div>
 <div class="col-md-6">
-   <h4>The risk level you can take:</h4>
-   Risk level (1-10): <input type='text' name='start_date' />  &nbsp;&nbsp;<br>
+   <h4 align="right">The crime level you can take:<br> 
+   <select name='crime_level' class="my_selector">
+  <option value="high">high</option>
+  <option value="medium">medium</option>
+  <option value="low">low</option>
+  </select></h4>
 </div>
    </p>
 <div class="col-md-12">
+   <br><br>
    <p>
    <input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
    </p>
@@ -166,6 +174,7 @@ estate investors in general.
 			</div>
 		</section>
 		<!-- end evaluate property -->
+               <hr>
 		<!-- start service -->
 		<section id="service">
 			<div class="container">
@@ -176,25 +185,26 @@ estate investors in general.
 					<div class="col-md-2"></div>
 					<div class="col-md-10 text-center">
 
+<h3 align="left"> 6426 Marlin Flts, San Antonio, TX 78244 </h3>
+<h4 align="left"> Forced appreciation: $16251 (10%) </h4>
+<h4 align="left"> Annual appreciation: $17394 (11%) </h4>
+<h4 align="left"> Annual cash flow: $10165 (6.3%) </h4>
+<h4 align="left"> The population growth: 3.2% </h4>
+<h4 align="left"> The properties occupied by renters: 27.3% </h4>
+<h4 align="left"> The properties vacant: 7.5% </h4>
+<h4 align="left"> The unemployment rate: 4.3% </h4>
+<h4 align="left"> The crime index: 45.4 (out of 100)</h4>
+<h4 align="left"> The median crime index of San Antonio: 48.6 (out of 100)</h4>
 
-<h3 align="left"> 5975 Cliff Bank St, San Antonio, TX 78250 </h3>
-<h4 align="left"> Forced appreciation: $12,000 (8%) </h4>
-<h4 align="left"> Annual appreciation: $12,000 (8%) </h4>
-<h4 align="left"> Annual cash flow: $9000 (6%) </h4>
-<h4 align="left"> The population growth: 1.2% </h4>
-<h4 align="left"> The properties occupied by renters: 32% </h4>
-<h4 align="left"> The percentage of vacant houses: 3.8% </h4>
-<h4 align="left"> The unemployment rate: 3.8% </h4>
-<h4 align="left"> The crime index: 3 (out of 10)</h4>
-
-<br>
-<h2 align="left"> This property falls in investment class:</h2>
-<h3 align="center"> High return, moderate management, moderate risk <h3>
 <h2 align="left">
 The city's investment situation based on your priorities:
 </h2>
 					</div>
-<iframe width="100%" height="520" frameborder="0" src="https://rarenaturew.cartodb.com/viz/7f2c1eaa-6247-11e5-a52d-0e6e1df11cbf/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<iframe width="100%" height="520" frameborder="0" src={{ src_http }} allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+<br>
+<h2 align="left"> This property falls in investment class:</h2>
+<h3 align="center"> Red: medium cash flow, medium appreciation, low crime. <h3>
 
 				<!--	<div class="col-md-2"></div>
 					<div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="2000">
@@ -296,26 +306,46 @@ The city's investment situation based on your priorities:
                                                 age of the properties, number of bedrooms etc, from 
                                                 zillow.com, trulia.com, city-data.com, via API and web scraping using
                                                 the python package called beautiful soup. The investment classes
-                                                are obtained via the k-means clustering methods, based on the
-                                                above mentioned data, and the calculated returns.</p>
+                                                are obtained via the k-means clustering methods, based on 
+                                                cash flow, appreciation, and crime.</p>
 					</div>
-					<div class="col-md-2"></div>
+				<div class="col-md-2"></div>
 					<div class="col-sm-6 col-md-5 wow fadeInLeft" data-wow-delay="2000">
 						<div class="work_thumb">
-							<img src="static/images/logos.png" class="img-responsive" alt="work">
+							<img src="static/images/logos2.png" class="img-responsive" alt="work">
 								<div class="work_overlay">
 									<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
 								</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-5 wow fadeInDown" data-wow-delay="2000">
+					<div class="col-sm-6 col-md-5 wow fadeInRight" data-wow-delay="2000">
 						<div class="work_thumb">
-							<img src="static/images/clusters.png" class="img-responsive" alt="work">
+							<img src="static/images/p3.png" class="img-responsive" alt="work">
 								<div class="work_overlay">
 									<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
 								</div>
 						</div>
 					</div>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-12">
+                                                <br>
+						<p>
+                                                <h3>Four Classes:</h3>
+						Black: low cash flow, low to medium appreciation, high crime.
+ 						Red: medium cash flow, medium appreciation, low crime.<br>
+						Green: high cash flow, medium appreciation, moderately high crime.
+  						Blue: medium cash flow, high appreciation, medium crime.
+                                                </p>
+				</div>
+				<div class="col-md-12">
+					<div class="col-sm-6 col-md-12 wow fadeInLeft" data-wow-delay="2000">
+	  		                    <a href='{{ url_for('static',filename='images/ppp.png')}}'>
+                                            <img src="static/images/ppp.png" class="img-responsive" ></a>
+					</div>
+				</div>
+				<div class="col-md-6"></div>
+				</div>
 					<!-- <div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay="2000">
 						<div class="work_thumb">
 							<img src="static/images/work-img-3.jpg" class="img-responsive" alt="work">

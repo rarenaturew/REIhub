@@ -1,40 +1,390 @@
-<!doctype html>
-<title>Real Estate Investment Club</title>
-<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
-<div class=page>
-  <h1>Result</h1>
-  <div class=metanav>
+<!DOCTYPE html>
+<html lang="en">
 
-<br><br>
-<h2 align="left">
-The returns of </h2>
-<h3 align="left"> 5975 Cliff Bank St, San Antonio, TX 78250 </h3>
-<h2 align="left"> are: </h2>
-<h4 align="left"> Forced appreciation: $12,000 (8%) </h4>
-<h4 align="left"> Annual appreciation: $12,000 (8%) </h4>
-<h4 align="left"> Annual cash flow: $9000 (6%) </h4>
-<h4 align="left"> The population growth: 1.2% </h4>
-<h4 align="left"> The properties occupied by renters: 32% </h4>
-<h4 align="left"> The percentage of vacant houses: 3.8% </h4>
-<h4 align="left"> The unemployment rate: 3.8% </h4>
-<h4 align="left"> The crime index: 3 (out of 10)</h4>
+	<head>
+		<meta charset="utf-8">
+		<title>Real Estate Investment Hub</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="icon" type="static/image/png" href="static/images/favicon.png">
+		<link rel="stylesheet" type=text/css href='{{ url_for('static',filename='css/bootstrap.min.css')}}'>
+		<link rel="stylesheet" type=text/css href='{{ url_for('static',filename='css/font-awesome.min.css')}}'>
+		<link rel="stylesheet" type=text/css href='{{ url_for('static',filename='css/animate.min.css')}}'>
+		<link rel="stylesheet" type=text/css href='{{ url_for('static',filename='css/templatemo-style.css')}}'>
+		<link href='http://fonts.useso.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	</head>
 
-<br><br>
-<h2 align="left"> This property falls in investment class:</h2>
-<br>
-<h1 align="center"> High return, moderate management, moderate risk <h1>
-<br><br>
+	<body data-spy="scroll" data-target=".navbar-collapse">
+
+		<!-- start navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header">
+						<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon icon-bar"></span>
+							<span class="icon icon-bar"></span>
+							<span class="icon icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand"><h3>REIHUB</h3></a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home" class="smoothScroll">HOME</a></li>
+							<li><a href="#about" class="smoothScroll">ABOUT</a></li>
+							<li><a href="#evaluate" class="smoothScroll">CHECK MY PROPERTY!</a></li>
+							<li><a href="#service" class="smoothScroll">RESULTS</a></li>
+							<li><a href="#work" class="smoothScroll">DATA AND WORK</a></li>
+							<!-- <li><a href="#pricing" class="smoothScroll">PRICING</a></li> -->
+							<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</nav>
+		<!-- end navigation -->
+
+		<!-- start service -->
+		<section id="service">
+			<div class="container">
+				<div class="row">
+					<div class="text-center col-md-12 wow fadeInDown" data-wow-delay="2000">
+						<h3>RESULTS</h3>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-10 text-center">
+
+
+<h3 align="left"> 6426 Marlin Flts, San Antonio, TX 78244 </h3>
+<h4 align="left"> Forced appreciation: $16251 (10%) </h4>
+<h4 align="left"> Annual appreciation: $17394 (11%) </h4>
+<h4 align="left"> Annual cash flow: $10165 (6.3%) </h4>
+<h4 align="left"> The population growth: 3.2% </h4>
+<h4 align="left"> The properties occupied by renters: 27.3% </h4>
+<h4 align="left"> The properties vacant: 7.5% </h4>
+<h4 align="left"> The unemployment rate: 4.3% </h4>
+<h4 align="left"> The crime index: 45.4 (out of 100)</h4>
+<h4 align="left"> The median crime index of San Antonio: 48.6 (out of 100)</h4>
+
 <h2 align="left">
 The city's investment situation based on your priorities:
 </h2>
+					</div>
+<!-- <iframe width="100%" height="520" frameborder="0" src={{ src_http }} allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe> -->
 
-  <form id='index' method='post' action='/' > <!-- action is the URL you want to move to next-->
-   <p>
-   <input type='submit' value='Back' /> <!-- value is the text that will appear on the button. -->
-   </p>
-</form>
+                  <img src={{ img_path }} class="img-responsive" ></a>
+<br>
+<h2 align="left"> This property falls in investment class:</h2>
+<h3 align="center"> Red: medium cash flow, medium appreciation, low crime. <h3>
 
-</div>
-<iframe width="100%" height="520" frameborder="0" src="https://rarenaturew.cartodb.com/viz/7f2c1eaa-6247-11e5-a52d-0e6e1df11cbf/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				<!--	<div class="col-md-2"></div>
+					<div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="2000">
+						<div class="media">
+							<i class="fa fa-cog pull-left media-object"></i>
+								<div class="media-body">
+									<h4 class="media-heading">WEB DEVELOPMENT</h4>
+									<p>In suscipit, purus id ultrices sodales, nunc mi porta nibh, bibendum maximus sem mi id metus. Suspendisse faucibus suscipit diam.</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 wow fadeInDown" data-wow-delay="2000">
+						<div class="media">
+							<i class="fa fa-globe pull-left media-object"></i>
+								<div class="media-body">
+									<h4 class="media-heading">DOMAIN HOSTING</h4>
+									<p>In suscipit, purus id ultrices sodales, nunc mi porta nibh, bibendum maximus sem mi id metus. Suspendisse faucibus suscipit diam.</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay="2000">
+						<div class="media">
+							<i class="fa fa-desktop pull-left media-object"></i>
+								<div class="media-body">
+									<h4 class="media-heading">WEB DESIGN</h4>
+									<p>In suscipit, purus id ultrices sodales, nunc mi porta nibh, bibendum maximus sem mi id metus. Suspendisse faucibus suscipit diam.</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="2000">
+						<div class="media">
+							<i class="fa fa-heart pull-left media-object"></i>
+								<div class="media-body">
+									<h4 class="media-heading">SOCIAL MEDIA</h4>
+									<p>In suscipit, purus id ultrices sodales, nunc mi porta nibh, bibendum maximus sem mi id metus. Suspendisse faucibus suscipit diam.</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 wow fadeInDown" data-wow-delay="2000">
+						<div class="media">
+							<i class="fa fa-laptop pull-left media-object"></i>
+								<div class="media-body">
+									<h4 class="media-heading">RESPONSIVE THEMES</h4>
+									<p>In suscipit, purus id ultrices sodales, nunc mi porta nibh, bibendum maximus sem mi id metus. Suspendisse faucibus suscipit diam.</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay="2000">
+						<div class="media">
+							<i class="fa fa-envelope pull-left media-object"></i>
+								<div class="media-body">
+									<h4 class="media-heading">EMAIL HOSTING</h4>
+									<p>In suscipit, purus id ultrices sodales, nunc mi porta nibh, bibendum maximus sem mi id metus. Suspendisse faucibus suscipit diam.</p>
+								</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+		<!-- end service -->
+		<!-- start newsletter 
+		<section id="newsletter" class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="text-center col-md-12 wow fadeInDown" data-wow-delay="2000">
+						<h3>CRYSTAL NEWSLETTER</h3>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<p>Mauris mattis vitae libero eget iaculis. Donec et augue quis quam porttitor consectetur ut nec sem. Integer sagittis viverra quam quis ultricies. Aenean risus nisl, consequat at nunc id, tincidunt tristique mauris.</p>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-12 wow fadeInDown" data-wow-delay="2000">
+						<form role="form">
+							<div class="col-md-1"></div>
+							<div class="col-md-6">
+								<input type="email" placeholder="Enter your Email" class="form-control" required>
+							</div>
+							<div class="col-md-4">
+								<input type="submit" value="SUBSCRIBE NOW" class="form-control">
+							</div>
+							<div class="col-md-1"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		 end newsletter -->
+		<!-- start work -->
+		<section id="work" class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow fadeInDown" data-wow-delay="2000">
+						<h3>DATA AND WORK</h3>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-12">
+						<p>Obtained data regarding price, crime, school scores, 
+                                                age of the properties, number of bedrooms etc, from 
+                                                zillow.com, trulia.com, city-data.com, via API and web scraping using
+                                                the python package called beautiful soup. The investment classes
+                                                are obtained via the k-means clustering methods, based on 
+                                                cash flow, appreciation, and crime.</p>
+					</div>
+				<div class="col-md-2"></div>
+					<div class="col-sm-6 col-md-5 wow fadeInLeft" data-wow-delay="2000">
+						<div class="work_thumb">
+							<img src="static/images/logos2.png" class="img-responsive" alt="work">
+								<div class="work_overlay">
+									<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-5 wow fadeInDown" data-wow-delay="2000">
+						<div class="work_thumb">
+							<img src="static/images/p3.png" class="img-responsive" alt="work">
+								<div class="work_overlay">
+									<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-12">
+                                                <br>
+						<p>
+                                                <h3>Four Classes:</h3>
+						Black: low cash flow, low to medium appreciation, high crime.
+ 						Red: medium cash flow, medium appreciation, low crime.<br>
+						Green: high cash flow, medium appreciation, moderately high crime.
+  						Blue: medium cash flow, high appreciation, medium crime.
+                                                </p>
+				</div>
+				<div class="col-md-12">
+					<div class="col-sm-6 col-md-12 wow fadeInLeft" data-wow-delay="2000">
+     			                     <a href='{{ url_for('static',filename='images/ppp.png')}}'>
+                                             <img src="static/images/ppp.png" class="img-responsive" ></a>
+					</div>
+				</div>
+				<div class="col-md-6"></div>
+				</div>
+					<!-- <div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay="2000">
+						<div class="work_thumb">
+							<img src="static/images/work-img-3.jpg" class="img-responsive" alt="work">
+								<div class="work_overlay">
+									<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="2000">
+						<div class="work_thumb">
+							<img src="static/images/work-img-4.jpg" class="img-responsive" alt="work">
+								<div class="work_overlay">
+									<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="2000">
+						<div class="work_thumb">
+							<img src="static/images/work-img-5.jpg" class="img-responsive" alt="work">
+								<div class="work_overlay">
+									<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay="2000">
+						<div class="work_thumb">
+							<img src="static/images/work-img-1.jpg" class="img-responsive" alt="work">
+								<div class="work_overlay">
+									<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+								</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+		<!-- end work -->
+		<!-- start pricing 
+		<section id="pricing" class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow fadeInDown" data-wow-delay="2000">
+						<h3>CRYSTAL PRICING</h3>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<p> Please tell your friends about <span class="blue">template</span><span class="green">mo</span><span class="orange">.com</span> website. Thank you for supporting us. Donec et augue quis quam porttitor consectetur ut nec sem. Integer sagittis viverra quam quis ultricies. Aenean risus nisl, consequat at nunc id, tincidunt tristique mauris.</p>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="2000">
+						<div class="plan plan_one">
+							<h4 class="plan_title">STARTER</h4>
+							<ul>
+								<li>$20 per month</li>
+								<li>50 GB SPACE</li>
+								<li>300 GB BANDWIDTH</li>
+								<li>50 Premium Designs</li>
+								<li>1-Year Support</li>
+							</ul>
+							<button class="btn btn-warning">SIGN UP</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 wow fadeInDown" data-wow-delay="2000">
+						<div class="plan plan_two">
+							<h4 class="plan_title">BUSINESS</h4>
+							<ul>
+								<li>$50 per month</li>
+								<li>200 GB SPACE</li>
+								<li>1,000 GB BANDWIDTH</li>
+								<li>100 Premium Designs</li>
+								<li>2-Year Support</li>
+							</ul>
+							<button class="btn btn-warning">SIGN UP</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 wow fadeInDown" data-wow-delay="2000">
+						<div class="plan plan_three">
+							<h4 class="plan_title">PROFESSIONAL</h4>
+							<ul>
+								<li>$75 per month</li>
+								<li>500 GB SPACE</li>
+								<li>3,000 GB BANDWIDTH</li>
+								<li>200 Premium Designs</li>
+								<li>3-Year Support</li>
+							</ul>
+							<button class="btn btn-warning">SIGN UP</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 wow fadeInRight" data-wow-delay="2000">
+						<div class="plan plan_four">
+							<h4 class="plan_title">ADVANCED</h4>
+							<ul>
+								<li>$120 per month</li>
+								<li>1,500 GB SPACE</li>
+								<li>8,000 GB BANDWIDTH</li>
+								<li>500 Premium Designs</li>
+								<li>Lifetime Support</li>
+							</ul>
+							<button class="btn btn-warning">SIGN UP</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		end pricing -->
+		<!-- start contact -->
+		<section id="contact" class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow fadeInDown" data-wow-delay="2000">
+						<h3>CONTACT REIHUB</h3>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<p> http://reihub.herokuapp.com/ </p>
+					</div>
+					<div class="col-md-2"></div>
+					<form action="#" method="post">
+						<div class="col-md-4 wow fadeInLeft" data-wow-delay="2000">
+							<input type="text" placeholder="Name" class="form-control">
+						</div>
+						<div class="col-md-4 wow fadeInDown" data-wow-delay="2000">
+							<input type="email" placeholder="Email" class="form-control" required>
+						</div>
+						<div class="col-md-4 wow fadeInRight" data-wow-delay="2000">
+							<input type="text" placeholder="Subject" class="form-control">
+						</div>
+						<div class="col-md-12 wow fadeInDown" data-wow-delay="2000">
+							<textarea placeholder="Message" class="form-control"></textarea>
+						</div>
+						<div class="col-md-3"></div>
+						<div class="col-md-6 wow fadeInUp" data-wow-delay="2000">
+							<input type="submit" value="SHOOT MESSAGE" class="form-control">
+						</div>
+						<div class="col-md-3"></div>
+					</form>
+				</div>
+			</div>
+			<!-- <div class="google_map"> <div id="map-canvas"></div> </div> -->
+			<footer class="container">
+				<div class="col-md-12 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+					<span>
+                    	Copyright &copy; Daoyan Wang, 2015. 
+                    	<!--| More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> -->
+                    </span>
+					<ul class="social_icon">
+				    <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-instagram"></a></li>
+						<li><a href="#" class="fa fa-apple"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-google"></a></li>
+						<li><a href="#" class="fa fa-wordpress"></a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<!-- end contact -->
 
-
+		<!-- start javascript -->
+		<script src='{{ url_for('static',filename='js/jquery.js')}}'></script>
+		<script src='{{ url_for('static',filename='js/bootstrap.min.js')}}'></script>
+		<script src='{{ url_for('static',filename='js/jquery.simple-text-rotator.js')}}'></script>
+		<script src='{{ url_for('static',filename='js/smoothscroll.js')}}'></script>
+		<script src='{{ url_for('static',filename='js/wow.min.js')}}'></script>
+		<script src='{{ url_for('static',filename='js/jquery.flexslider.js')}}'></script>
+		<script src='{{ url_for('static',filename='js/templatemo-script.js')}}'></script>
+		<!-- end javascript -->
+	</body>	
+</html>
